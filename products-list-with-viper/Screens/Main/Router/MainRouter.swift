@@ -16,8 +16,8 @@ final class MainRouter: MainRouterProtocol {
     
     func navigate(to route: MainRoute) {
         switch route {
-        case .detail:
-            navigate(DetailViewController())
+        case let .presentAlert(title, message):
+            presentAlert(title: title, message: message)
         }
     }
     
@@ -25,5 +25,13 @@ final class MainRouter: MainRouterProtocol {
         view.navigationController?.pushViewController(
             controller,
             animated: true)
+    }
+    
+    private func presentAlert(title: String, message: String) {
+        let alertView = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert)
+        view.present(alertView, animated: true)
     }
 }

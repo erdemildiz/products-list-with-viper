@@ -12,6 +12,8 @@ extension MainViewController: MainViewProtocol {
         switch output {
         case .didLoad:
             setupUI()
+        case .reloadData:
+            tableView.reloadData()
         }
     }
 }

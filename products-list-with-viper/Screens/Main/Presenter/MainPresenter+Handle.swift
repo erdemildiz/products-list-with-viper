@@ -10,6 +10,6 @@ import Foundation
 extension MainPresenter {
     func notifyDidLoad() {
         view.handle(.didLoad)
-        interactor.getMovies()
+        interactor.getPopularMovies()
     }
 }
