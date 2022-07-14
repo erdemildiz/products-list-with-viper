@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Moya
 
 // MARK: - View
 protocol MainViewProtocol: AnyObject {
@@ -14,17 +15,19 @@ protocol MainViewProtocol: AnyObject {
 
 // MARK: - Presenter
 protocol MainPresenterProtocol: AnyObject {
+    var movies: [MovieItem]? { get set }
     func notifyDidLoad()
 }
 
 enum MainPresenterOutput {
     case didLoad
+    case reloadData
 }
 
 // MARK: - Interactor
 protocol MainInteractorProtocol: AnyObject {
     var delegate: MainInteractorDelegate? { get set }
-    func getMovies()
+    func getPopularMovies()
 }
 
 protocol MainInteractorDelegate: AnyObject {
@@ -32,7 +35,8 @@ protocol MainInteractorDelegate: AnyObject {
 }
 
 enum MainInteractorOutput {
-    case fetchedData
+    case fetchedPopularMovies(movies: [MovieItem])
+    case error(error: MoyaError)
 }
 
 // MARK: - Router
@@ -41,5 +45,5 @@ protocol MainRouterProtocol: AnyObject {
 }
 
 enum MainRoute {
-    case detail
+    case presentAlert(title: String, message: String)
 }

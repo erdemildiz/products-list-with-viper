@@ -9,12 +9,15 @@ import UIKit
 
 extension MainViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return presenter?.movies?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let movie = presenter?.movies?[indexPath.row] else {
+            return UITableViewCell()
+        }
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Row: \(indexPath.row)"
+        cell.textLabel?.text = movie.originalTitle
         return cell
     }
     

@@ -13,6 +13,8 @@ final class MainPresenter: MainPresenterProtocol {
     let interactor: MainInteractorProtocol
     let router: MainRouterProtocol
     
+    var movies: [MovieItem]?
+    
     init(
         view: MainViewProtocol,
         interactor: MainInteractorProtocol,
@@ -29,8 +31,11 @@ final class MainPresenter: MainPresenterProtocol {
 extension MainPresenter: MainInteractorDelegate {
     func handle(_ output: MainInteractorOutput) {
         switch output {
-        case .fetchedData:
-            router.navigate(to: .detail)
+        case .fetchedPopularMovies(let movies):
+            self.movies = movies
+            view.handle(.reloadData)
+        case .error(let error):
+            router.navigate(to: .presentAlert(title: "Error!", message: error.localizedDescription))
         }
     }
 }
