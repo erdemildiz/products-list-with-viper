@@ -17,15 +17,25 @@ final class MainViewController: UITableViewController {
         return searchViewController
     }()
     
+    lazy var emptyLabel: UILabel = {
+        let label = UILabel(frame: Screen.bounds)
+        label.text = "No data exist!"
+        label.textAlignment = .center
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.notifyDidLoad()
+        presenter?.notifyDidLoad()        
     }
 }
 
 // MARK: - UISearchBarDelegate
 extension MainViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        guard let searchText = searchBar.text else {
+            return
+        }
+        presenter?.searchMovie(query: searchText)
     }
 }

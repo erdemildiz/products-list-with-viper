@@ -13,6 +13,11 @@ typealias Task = Moya.Task
 typealias TargetType = Moya.TargetType
 
 extension Moya.TargetType {
+    var defaultParams: [String: String] {
+        var params: [String: String] = [:]
+        params["api_key"] = serviceApiKey ?? ""
+        return params
+    }
     var baseURL: URL {
         serviceBaseURL ?? URL(string: "")!
     }
@@ -26,9 +31,9 @@ extension Moya.TargetType {
     }
     
     var task: Task {
-        var params: [String: String] = [:]
-        params["api_key"] = serviceApiKey ?? ""
-        return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        return .requestParameters(
+            parameters: defaultParams,
+            encoding: URLEncoding.default)
     }
     
     var headers: [String : String]? {

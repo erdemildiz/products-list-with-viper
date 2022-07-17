@@ -17,6 +17,7 @@ protocol MainViewProtocol: AnyObject {
 protocol MainPresenterProtocol: AnyObject {
     var movies: [MovieItem]? { get set }
     func notifyDidLoad()
+    func searchMovie(query: String)
 }
 
 enum MainPresenterOutput {
@@ -28,6 +29,7 @@ enum MainPresenterOutput {
 protocol MainInteractorProtocol: AnyObject {
     var delegate: MainInteractorDelegate? { get set }
     func getPopularMovies()
+    func searchMovie(query: String)
 }
 
 protocol MainInteractorDelegate: AnyObject {
@@ -36,6 +38,9 @@ protocol MainInteractorDelegate: AnyObject {
 
 enum MainInteractorOutput {
     case fetchedPopularMovies(movies: [MovieItem])
+    case searchedMovie(movies: [MovieItem])
+    case showLoading
+    case hideLoading
     case error(error: MoyaError)
 }
 

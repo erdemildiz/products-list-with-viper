@@ -31,9 +31,13 @@ final class MainPresenter: MainPresenterProtocol {
 extension MainPresenter: MainInteractorDelegate {
     func handle(_ output: MainInteractorOutput) {
         switch output {
-        case .fetchedPopularMovies(let movies):
+        case .fetchedPopularMovies(let movies), .searchedMovie(let movies):
             self.movies = movies
             view.handle(.reloadData)
+        case .showLoading:
+            LoadingView.shared.showLoading()
+        case .hideLoading:
+            LoadingView.shared.hideLoading()
         case .error(let error):
             router.navigate(to: .presentAlert(title: "Error!", message: error.localizedDescription))
         }

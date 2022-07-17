@@ -12,8 +12,10 @@ extension MainViewController: MainViewProtocol {
         switch output {
         case .didLoad:
             setupUI()
+            registerCell()
         case .reloadData:
             tableView.reloadData()
+            searchViewController.isActive = false
         }
     }
 }
