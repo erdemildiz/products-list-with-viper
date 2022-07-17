@@ -22,6 +22,9 @@ final class DetailRouter: DetailRouterProtocol {
             castViewController.casts = casts
             castViewController.didTappedAnyCast = didTappedAnyCast
             view.present(castViewController, animated: true)
+        case .credit(let cast):
+            let personDetailViewController = PersonBuilder.make(person: cast)
+            view.navigationController?.pushViewController(personDetailViewController, animated: true)
         case let .presentAlert(title, message):
             presentAlert(title: title, message: message)        
         }
@@ -38,6 +41,8 @@ final class DetailRouter: DetailRouterProtocol {
             title: title,
             message: message,
             preferredStyle: .alert)
+        let dismisAction = UIAlertAction(title: "Ok", style: .destructive)
+        alertView.addAction(dismisAction)
         view.present(alertView, animated: true)
     }
 }
