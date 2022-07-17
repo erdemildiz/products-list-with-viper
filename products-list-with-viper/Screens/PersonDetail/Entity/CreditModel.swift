@@ -31,4 +31,3 @@ enum CreditMediaType: String, Codable {
     case movie = "movie"
     case tv = "tv"
 }
-
