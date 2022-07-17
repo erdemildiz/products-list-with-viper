@@ -32,7 +32,6 @@ extension MainViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detail = DetailViewController()
-        self.navigationController?.pushViewController(detail, animated: true)
+        presenter?.didTappedMovieCell(indexPath: indexPath)
     }
 }

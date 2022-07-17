@@ -1,26 +1,29 @@
 //
-//  MainRouter.swift
+//  DetailRouter.swift
 //  products-list-with-viper
 //
-//  Created by Erdem ILDIZ on 13.07.2022.
+//  Created by Erdem ILDIZ on 17.07.2022.
 //
 
 import UIKit
 
-final class MainRouter: MainRouterProtocol {
+final class DetailRouter: DetailRouterProtocol {
     unowned let view: UIViewController
+    var didTappedAnyCast: ((_ cast: CastItem) -> Void)?
     
     init(view: UIViewController) {
         self.view = view
     }
     
-    func navigate(to route: MainRoute) {
+    func navigate(to route: DetailRoute) {
         switch route {
-        case .detail(let movie):
-            let detail = DetailBuilder.make(movie: movie)
-            view.navigationController?.pushViewController(detail, animated: true)
+        case .cast(let casts):
+            let castViewController = CastViewController()
+            castViewController.casts = casts
+            castViewController.didTappedAnyCast = didTappedAnyCast
+            view.present(castViewController, animated: true)
         case let .presentAlert(title, message):
-            presentAlert(title: title, message: message)
+            presentAlert(title: title, message: message)        
         }
     }
     
