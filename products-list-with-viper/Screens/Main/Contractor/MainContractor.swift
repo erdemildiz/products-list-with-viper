@@ -17,6 +17,7 @@ protocol MainViewProtocol: AnyObject {
 protocol MainPresenterProtocol: AnyObject {
     var movies: [MovieItem]? { get set }
     func notifyDidLoad()
+    func didTappedMovieCell(indexPath: IndexPath)
     func searchMovie(query: String)
 }
 
@@ -50,5 +51,6 @@ protocol MainRouterProtocol: AnyObject {
 }
 
 enum MainRoute {
+    case detail(movie: MovieItem)
     case presentAlert(title: String, message: String)
 }

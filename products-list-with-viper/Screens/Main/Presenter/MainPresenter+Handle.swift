@@ -13,6 +13,13 @@ extension MainPresenter {
         interactor.getPopularMovies()
     }
     
+    func didTappedMovieCell(indexPath: IndexPath) {
+        guard let movie = movies?[indexPath.row] else {
+            return
+        }
+        router.navigate(to: .detail(movie: movie))
+    }
+    
     func searchMovie(query: String) {
         interactor.searchMovie(query: query)
     }
