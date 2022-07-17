@@ -8,5 +8,6 @@ target 'products-list-with-viper' do
   # Pods for products-list-with-viper
   pod 'Moya', '~> 15.0'
   pod 'Kingfisher', '~> 6.3.1'
+  pod 'SwiftLint'
 
 end

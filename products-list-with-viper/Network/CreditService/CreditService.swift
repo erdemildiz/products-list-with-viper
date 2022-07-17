@@ -10,7 +10,6 @@ import Moya
 
 enum CreditService: TargetType {
     case info(personId: Int)
-    
     var path: String {
         switch self {
         case .info(let personId):
@@ -18,4 +17,3 @@ enum CreditService: TargetType {
         }
     }
 }
-

@@ -10,8 +10,7 @@ import Foundation
 import Moya
 
 struct NetworkManager<Target: TargetType> {
-    private let provider = MoyaProvider<Target>(plugins: [NetworkLoggerPlugin()])
-    
+    private let provider = MoyaProvider<Target>(plugins: [NetworkLoggerPlugin()])    
     func request<Model: Decodable>(
         target: Target,
         _ model: Model.Type,

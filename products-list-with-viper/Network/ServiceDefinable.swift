@@ -36,8 +36,7 @@ extension Moya.TargetType {
             encoding: URLEncoding.default)
     }
     
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         return ["Content-type": "application/json"]
     }
 }
-

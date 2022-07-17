@@ -18,4 +18,3 @@ enum CastService: TargetType {
         }
     }
 }
-

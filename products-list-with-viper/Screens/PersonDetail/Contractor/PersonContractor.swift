@@ -51,6 +51,3 @@ enum PersonRoute {
     case credit(credits: [CreditItem])
     case presentAlert(title: String, message: String)
 }
-
-
-
