@@ -12,4 +12,8 @@ extension MainPresenter {
         view.handle(.didLoad)
         interactor.getPopularMovies()
     }
+    
+    func searchMovie(query: String) {
+        interactor.searchMovie(query: query)
+    }
 }
