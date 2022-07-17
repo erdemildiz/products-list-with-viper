@@ -50,5 +50,6 @@ protocol DetailRouterProtocol: AnyObject {
 
 enum DetailRoute {
     case cast(casts: [CastItem])
+    case credit(cast: CastItem)
     case presentAlert(title: String, message: String)
 }

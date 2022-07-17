@@ -1,24 +1,25 @@
 //
-//  MainRouter.swift
+//  PersonRouter.swift
 //  products-list-with-viper
 //
-//  Created by Erdem ILDIZ on 13.07.2022.
+//  Created by Erdem ILDIZ on 17.07.2022.
 //
 
 import UIKit
 
-final class MainRouter: MainRouterProtocol {
+final class PersonRouter: PersonRouterProtocol {
     unowned let view: UIViewController
     
     init(view: UIViewController) {
         self.view = view
     }
     
-    func navigate(to route: MainRoute) {
+    func navigate(to route: PersonRoute) {
         switch route {
-        case .detail(let movie):
-            let detail = DetailBuilder.make(movie: movie)
-            view.navigationController?.pushViewController(detail, animated: true)
+        case .credit(let credits):
+        let creditTableViewController = CreditTableViewController()
+        creditTableViewController.credits = credits
+        view.present(creditTableViewController, animated: true)
         case let .presentAlert(title, message):
             presentAlert(title: title, message: message)
         }

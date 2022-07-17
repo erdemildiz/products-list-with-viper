@@ -21,6 +21,6 @@ extension DetailPrensenter {
     }
     
     func didTappedAnyCast(_ cast: CastItem) {
-        print(cast)
+        router.navigate(to: .credit(cast: cast))
     }
 }

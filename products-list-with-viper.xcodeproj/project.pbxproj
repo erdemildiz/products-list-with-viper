@@ -26,6 +26,22 @@
 		0923ADDF28844EEB00B49612 /* DetailPrensenter+Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADDE28844EEB00B49612 /* DetailPrensenter+Handle.swift */; };
 		0923ADE328845FF600B49612 /* CastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0923ADE128845FF600B49612 /* CastViewController.xib */; };
 		0923ADE428845FF600B49612 /* CastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADE228845FF600B49612 /* CastViewController.swift */; };
+		0923ADEC288467BB00B49612 /* PersonContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADEB288467BB00B49612 /* PersonContractor.swift */; };
+		0923ADEF2884688400B49612 /* CreditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADEE2884688400B49612 /* CreditModel.swift */; };
+		0923ADF12884694700B49612 /* PersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADF02884694700B49612 /* PersonPresenter.swift */; };
+		0923ADF32884699900B49612 /* PersonPresenter+Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADF22884699900B49612 /* PersonPresenter+Handle.swift */; };
+		0923ADF528846A6900B49612 /* PersonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADF428846A6900B49612 /* PersonInteractor.swift */; };
+		0923ADF828846B6E00B49612 /* CreditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADF728846ABB00B49612 /* CreditService.swift */; };
+		0923ADFA28846BE800B49612 /* PersonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADF928846BE800B49612 /* PersonBuilder.swift */; };
+		0923ADFC28846C1E00B49612 /* PersonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADFB28846C1E00B49612 /* PersonRouter.swift */; };
+		0923ADFE28846CAA00B49612 /* PersonViewController+Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADFD28846CAA00B49612 /* PersonViewController+Output.swift */; };
+		0923AE0028846CD700B49612 /* PersonViewController+Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923ADFF28846CD700B49612 /* PersonViewController+Handle.swift */; };
+		0923AE0528846EA800B49612 /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0923AE0328846EA800B49612 /* PersonViewController.xib */; };
+		0923AE0628846EA800B49612 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923AE0428846EA800B49612 /* PersonViewController.swift */; };
+		0923AE0D2884725200B49612 /* CreditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923AE0C2884725200B49612 /* CreditTableViewController.swift */; };
+		0923AE0F288472E100B49612 /* CreditTableViewController+Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923AE0E288472E100B49612 /* CreditTableViewController+Datasource.swift */; };
+		0923AE132884737900B49612 /* CreditItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0923AE112884737900B49612 /* CreditItemTableViewCell.xib */; };
+		0923AE142884737900B49612 /* CreditItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923AE122884737900B49612 /* CreditItemTableViewCell.swift */; };
 		097AC953287F62EE0058B762 /* MainContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097AC952287F62EE0058B762 /* MainContractor.swift */; };
 		097AC955287F65220058B762 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097AC954287F65220058B762 /* MainPresenter.swift */; };
 		097AC957287F66120058B762 /* MainPresenter+Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097AC956287F66120058B762 /* MainPresenter+Handle.swift */; };
@@ -39,7 +55,6 @@
 		09C7C0B8287F1AD30031AD34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7C0B7287F1AD30031AD34 /* MainViewController.swift */; };
 		09C7C0BD287F1AD90031AD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C7C0BC287F1AD90031AD34 /* Assets.xcassets */; };
 		09C7C0C0287F1AD90031AD34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C7C0BE287F1AD90031AD34 /* LaunchScreen.storyboard */; };
-		09C7C0D7287F32AC0031AD34 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7C0D6287F32AC0031AD34 /* PersonViewController.swift */; };
 		09C91C052880246800FD66B2 /* ServiceDefinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C91C042880246800FD66B2 /* ServiceDefinable.swift */; };
 		09C91C07288026CD00FD66B2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C91C06288026CD00FD66B2 /* NetworkManager.swift */; };
 		09C91C09288039E500FD66B2 /* ServiceDefinable+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C91C08288039E500FD66B2 /* ServiceDefinable+Config.swift */; };
@@ -68,6 +83,22 @@
 		0923ADDE28844EEB00B49612 /* DetailPrensenter+Handle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailPrensenter+Handle.swift"; sourceTree = "<group>"; };
 		0923ADE128845FF600B49612 /* CastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastViewController.xib; sourceTree = "<group>"; };
 		0923ADE228845FF600B49612 /* CastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastViewController.swift; sourceTree = "<group>"; };
+		0923ADEB288467BB00B49612 /* PersonContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonContractor.swift; sourceTree = "<group>"; };
+		0923ADEE2884688400B49612 /* CreditModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditModel.swift; sourceTree = "<group>"; };
+		0923ADF02884694700B49612 /* PersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
+		0923ADF22884699900B49612 /* PersonPresenter+Handle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonPresenter+Handle.swift"; sourceTree = "<group>"; };
+		0923ADF428846A6900B49612 /* PersonInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInteractor.swift; sourceTree = "<group>"; };
+		0923ADF728846ABB00B49612 /* CreditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditService.swift; sourceTree = "<group>"; };
+		0923ADF928846BE800B49612 /* PersonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBuilder.swift; sourceTree = "<group>"; };
+		0923ADFB28846C1E00B49612 /* PersonRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRouter.swift; sourceTree = "<group>"; };
+		0923ADFD28846CAA00B49612 /* PersonViewController+Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonViewController+Output.swift"; sourceTree = "<group>"; };
+		0923ADFF28846CD700B49612 /* PersonViewController+Handle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonViewController+Handle.swift"; sourceTree = "<group>"; };
+		0923AE0328846EA800B49612 /* PersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
+		0923AE0428846EA800B49612 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		0923AE0C2884725200B49612 /* CreditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTableViewController.swift; sourceTree = "<group>"; };
+		0923AE0E288472E100B49612 /* CreditTableViewController+Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreditTableViewController+Datasource.swift"; sourceTree = "<group>"; };
+		0923AE112884737900B49612 /* CreditItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditItemTableViewCell.xib; sourceTree = "<group>"; };
+		0923AE122884737900B49612 /* CreditItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditItemTableViewCell.swift; sourceTree = "<group>"; };
 		097AC952287F62EE0058B762 /* MainContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContractor.swift; sourceTree = "<group>"; };
 		097AC954287F65220058B762 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		097AC956287F66120058B762 /* MainPresenter+Handle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainPresenter+Handle.swift"; sourceTree = "<group>"; };
@@ -83,7 +114,6 @@
 		09C7C0BC287F1AD90031AD34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C7C0BF287F1AD90031AD34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C7C0C1287F1AD90031AD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09C7C0D6287F32AC0031AD34 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		09C91C042880246800FD66B2 /* ServiceDefinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDefinable.swift; sourceTree = "<group>"; };
 		09C91C06288026CD00FD66B2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		09C91C08288039E500FD66B2 /* ServiceDefinable+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceDefinable+Config.swift"; sourceTree = "<group>"; };
@@ -183,6 +213,82 @@
 			path = Cast;
 			sourceTree = "<group>";
 		};
+		0923ADE62884676700B49612 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0923ADF928846BE800B49612 /* PersonBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0923ADE72884677200B49612 /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				0923ADEB288467BB00B49612 /* PersonContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		0923ADE82884677C00B49612 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0923ADF428846A6900B49612 /* PersonInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0923ADE92884678400B49612 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0923ADF02884694700B49612 /* PersonPresenter.swift */,
+				0923ADF22884699900B49612 /* PersonPresenter+Handle.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0923ADEA2884679200B49612 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0923ADFB28846C1E00B49612 /* PersonRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0923ADED2884686E00B49612 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0923ADEE2884688400B49612 /* CreditModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0923ADF628846AA500B49612 /* CreditService */ = {
+			isa = PBXGroup;
+			children = (
+				0923ADF728846ABB00B49612 /* CreditService.swift */,
+			);
+			path = CreditService;
+			sourceTree = "<group>";
+		};
+		0923AE072884720300B49612 /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				0923AE0C2884725200B49612 /* CreditTableViewController.swift */,
+				0923AE0E288472E100B49612 /* CreditTableViewController+Datasource.swift */,
+				0923AE102884735200B49612 /* Cell */,
+			);
+			path = Credit;
+			sourceTree = "<group>";
+		};
+		0923AE102884735200B49612 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0923AE112884737900B49612 /* CreditItemTableViewCell.xib */,
+				0923AE122884737900B49612 /* CreditItemTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		097AC94C287F62930058B762 /* Contractor */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +371,7 @@
 		09C7C0C7287F2C5E0031AD34 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0923AE072884720300B49612 /* Credit */,
 				0923ADE028845FD700B49612 /* Cast */,
 				09C7C0D1287F319F0031AD34 /* Detail */,
 				09C7C0CC287F2FB10031AD34 /* Main */,
@@ -326,6 +433,12 @@
 		09C7C0D2287F31AF0031AD34 /* PersonDetail */ = {
 			isa = PBXGroup;
 			children = (
+				0923ADE62884676700B49612 /* Builder */,
+				0923ADE72884677200B49612 /* Contractor */,
+				0923ADED2884686E00B49612 /* Entity */,
+				0923ADE82884677C00B49612 /* Interactor */,
+				0923ADE92884678400B49612 /* Presenter */,
+				0923ADEA2884679200B49612 /* Router */,
 				09C7C0D8287F335F0031AD34 /* View */,
 			);
 			path = PersonDetail;
@@ -345,7 +458,10 @@
 		09C7C0D8287F335F0031AD34 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				09C7C0D6287F32AC0031AD34 /* PersonViewController.swift */,
+				0923AE0428846EA800B49612 /* PersonViewController.swift */,
+				0923AE0328846EA800B49612 /* PersonViewController.xib */,
+				0923ADFF28846CD700B49612 /* PersonViewController+Handle.swift */,
+				0923ADFD28846CAA00B49612 /* PersonViewController+Output.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +473,7 @@
 				09C91C042880246800FD66B2 /* ServiceDefinable.swift */,
 				09C91C08288039E500FD66B2 /* ServiceDefinable+Config.swift */,
 				0923ADD728844A4F00B49612 /* CastService */,
+				0923ADF628846AA500B49612 /* CreditService */,
 				09C91C0A28803E5500FD66B2 /* Popular */,
 			);
 			path = Network;
@@ -476,7 +593,9 @@
 			files = (
 				0905B9B32880C61400A9596D /* MovieItemTableViewCell.xib in Resources */,
 				09C7C0C0287F1AD90031AD34 /* LaunchScreen.storyboard in Resources */,
+				0923AE132884737900B49612 /* CreditItemTableViewCell.xib in Resources */,
 				0923ADE328845FF600B49612 /* CastViewController.xib in Resources */,
+				0923AE0528846EA800B49612 /* PersonViewController.xib in Resources */,
 				09C7C0BD287F1AD90031AD34 /* Assets.xcassets in Resources */,
 				0923ADD32884454700B49612 /* DetailViewController.xib in Resources */,
 			);
@@ -531,39 +650,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0923ADF828846B6E00B49612 /* CreditService.swift in Sources */,
 				0923ADCE288442FE00B49612 /* DetailBuilder.swift in Sources */,
-				09C7C0D7287F32AC0031AD34 /* PersonViewController.swift in Sources */,
+				0923ADF32884699900B49612 /* PersonPresenter+Handle.swift in Sources */,
 				0923ADC5288440D200B49612 /* DetailInteractor.swift in Sources */,
 				097AC957287F66120058B762 /* MainPresenter+Handle.swift in Sources */,
 				09C91C132880B5AE00FD66B2 /* LoadingView.swift in Sources */,
 				0923ADC7288440F700B49612 /* DetailPrensenter.swift in Sources */,
 				0923ADD928844A6800B49612 /* CastService.swift in Sources */,
+				0923ADFC28846C1E00B49612 /* PersonRouter.swift in Sources */,
 				097AC963287F6A440058B762 /* MainViewController+Handle.swift in Sources */,
+				0923AE0028846CD700B49612 /* PersonViewController+Handle.swift in Sources */,
 				09C91C07288026CD00FD66B2 /* NetworkManager.swift in Sources */,
 				09C91C0E28803E9400FD66B2 /* PopularMovieService.swift in Sources */,
 				09C91C172880BA8300FD66B2 /* UIApplication+TopController.swift in Sources */,
 				0923ADE428845FF600B49612 /* CastViewController.swift in Sources */,
 				09C7C0B8287F1AD30031AD34 /* MainViewController.swift in Sources */,
+				0923ADFE28846CAA00B49612 /* PersonViewController+Output.swift in Sources */,
 				097AC95B287F67CB0058B762 /* MainViewController+Output.swift in Sources */,
 				09C91C10288040E300FD66B2 /* MovieModel.swift in Sources */,
 				09C7C0B4287F1AD30031AD34 /* AppDelegate.swift in Sources */,
 				0923ADDD28844CF700B49612 /* DetailViewController+Handle.swift in Sources */,
+				0923AE0628846EA800B49612 /* PersonViewController.swift in Sources */,
 				0923ADD42884454700B49612 /* DetailViewController.swift in Sources */,
+				0923ADF528846A6900B49612 /* PersonInteractor.swift in Sources */,
+				0923AE0D2884725200B49612 /* CreditTableViewController.swift in Sources */,
 				097AC959287F66A90058B762 /* MainInteractor.swift in Sources */,
 				097AC961287F6A090058B762 /* MainViewController+TableView.swift in Sources */,
+				0923AE0F288472E100B49612 /* CreditTableViewController+Datasource.swift in Sources */,
 				0923ADCB2884425200B49612 /* DetailRouter.swift in Sources */,
 				09C91C052880246800FD66B2 /* ServiceDefinable.swift in Sources */,
 				097AC95F287F68790058B762 /* MainBuilder.swift in Sources */,
 				097AC955287F65220058B762 /* MainPresenter.swift in Sources */,
 				097AC95D287F68190058B762 /* MainRouter.swift in Sources */,
+				0923ADF12884694700B49612 /* PersonPresenter.swift in Sources */,
 				0923ADD6288449AE00B49612 /* CastModel.swift in Sources */,
 				0905B9B62880CBC100A9596D /* Bundle+URL.swift in Sources */,
+				0923AE142884737900B49612 /* CreditItemTableViewCell.swift in Sources */,
 				0923ADDF28844EEB00B49612 /* DetailPrensenter+Handle.swift in Sources */,
+				0923ADFA28846BE800B49612 /* PersonBuilder.swift in Sources */,
 				0923ADBF28843FB100B49612 /* DetailContractor.swift in Sources */,
 				09C91C09288039E500FD66B2 /* ServiceDefinable+Config.swift in Sources */,
 				0923ADDB28844C7C00B49612 /* DetailViewController+Output.swift in Sources */,
 				0905B9B42880C61400A9596D /* MovieItemTableViewCell.swift in Sources */,
+				0923ADEF2884688400B49612 /* CreditModel.swift in Sources */,
 				0905B9AD2880BF1600A9596D /* UIScreen+Size.swift in Sources */,
+				0923ADEC288467BB00B49612 /* PersonContractor.swift in Sources */,
 				097AC953287F62EE0058B762 /* MainContractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
